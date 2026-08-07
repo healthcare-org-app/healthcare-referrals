@@ -1,0 +1,11 @@
+name: referrals-service
+port: 8310
+lang: python
+description: "referrals-service \u2014 domain: ehr"
+http_deps:
+- providers-service
+- patients-service
+- audit-log-service
+publishes:
+- audit.event
+subscribes: []
